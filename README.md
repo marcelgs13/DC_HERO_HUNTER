@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="Imagens/dc_logo.png" alt="Logo DC Comics" width="40"><br>
+  <img src="Projeto_Web-MARCEL_GUSTAVO/Imagens/dc_logo.png" alt="Logo DC Comics" width="40"><br>
   DC Hero Hunter
 </h1>
 
