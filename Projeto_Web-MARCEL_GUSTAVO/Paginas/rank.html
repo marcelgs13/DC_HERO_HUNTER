@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking de Poder - DC</title>
+    <link rel="stylesheet" href="../Estilo/style.css">
+    <link rel="shortcut icon" href="../Imagens/dc_logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-area">
+                <img src="../Imagens/dc_logo.png" alt="Logo DC Comics" class="site-logo" lang="en">
+                <h1 style="margin:0;" lang="en">DC HERO HUNTER</h1>
+            </div>
+            <nav style="margin-top:10px; display:flex; gap:15px; flex-wrap:wrap;">
+                <a href="../index.html"        style="color:white; text-decoration:none;">Início</a>
+                <a href="herois.html"          style="color:white; text-decoration:none;">Heróis</a>
+                <a href="viloes.html"          style="color:white; text-decoration:none;">Vilões</a>
+                <a href="anti_herois.html"     style="color:white; text-decoration:none;">Anti-Heróis</a>
+                <a href="rank.html"            style="color:#005bc4; font-weight:bold; text-decoration:none;">Rank</a>
+                <a href="sobre.html"           style="color:white; text-decoration:none;">Sobre o Projeto</a>
+            </nav>
+            <div class="search-box" style="visibility:hidden; margin-top:15px;"><input type="text"></div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <main class="main-content" style="flex:100%; max-width:1000px; margin:0 auto;">
+            <h2 style="color:#ffc107; border-bottom:2px solid #333; padding-bottom:10px; margin-bottom:20px; text-align:center;">
+                Hall da Fama: Top 50 Mais Poderosos
+            </h2>
+
+            <div class="controles-ranking">
+                <div>
+                    <label style="color:#aaa; margin-right:10px;">Lado da Força:</label>
+                    <select id="filtroRank" onchange="atualizarRanking()">
+                        <option value="todos">Todos (Heróis e Vilões)</option>
+                        <option value="good">Apenas Heróis</option>
+                        <option value="bad">Apenas Vilões</option>
+                    </select>
+                </div>
+                <div>
+                    <label style="color:#aaa; margin-right:10px;">Ordenar por:</label>
+                    <select id="ordemRank" onchange="atualizarRanking()">
+                        <option value="total">Poder Total (Soma de tudo)</option>
+                        <option value="intelligence">Inteligência</option>
+                        <option value="strength">Força Física</option>
+                        <option value="speed">Velocidade</option>
+                        <option value="durability">Durabilidade</option>
+                        <option value="power">Poder Bruto</option>
+                        <option value="combat">Habilidade de Combate</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="loading" class="status-message">Calculando níveis de poder...</div>
+
+            <div class="tabela-container hidden" id="tabelaContainer">
+                <table class="tabela-rank">
+                    <thead>
+                        <tr>
+                            <th>Posição</th>
+                            <th>Personagem</th>
+                            <th>Alinhamento</th>
+                            <th>Status Focado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabelaRank"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="../Js/script.js"></script>
+</body>
+</html>

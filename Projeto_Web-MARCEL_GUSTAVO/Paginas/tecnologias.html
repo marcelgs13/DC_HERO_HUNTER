@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologias - DC</title>
+    <link rel="stylesheet" href="../Estilo/style.css">
+    <link rel="shortcut icon" href="../Imagens/dc_logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-area">
+                <img src="../Imagens/dc_logo.png" alt="Logo DC Comics" class="site-logo" lang="en">
+                <h1 style="margin:0;" lang="en">DC HERO HUNTER</h1>
+            </div>
+            <nav style="margin-top:10px; display:flex; gap:15px; flex-wrap:wrap;">
+                <a href="../index.html"        style="color:white; text-decoration:none;">Início</a>
+                <a href="herois.html"          style="color:white; text-decoration:none;">Heróis</a>
+                <a href="viloes.html"          style="color:white; text-decoration:none;">Vilões</a>
+                <a href="anti_herois.html"     style="color:white; text-decoration:none;">Anti-Heróis</a>
+                <a href="rank.html"            style="color:white; text-decoration:none;">Rank</a>
+                <a href="sobre.html"           style="color:#005bc4; font-weight:bold; text-decoration:none;">Sobre o Projeto</a>
+            </nav>
+            <div class="search-box" style="visibility:hidden; margin-top:15px;"><input type="text"></div>
+        </div>
+    </header>
+
+    <div class="app-layout">
+        <main class="main-content" style="flex:100%; max-width:900px; margin:0 auto;">
+
+            <h2 style="color:#005bc4; text-align:center; font-size:2.2rem; margin-bottom:20px;">
+                O Projeto <span lang="en">DC Hero Hunter</span>
+            </h2>
+
+            <div class="tabs-container">
+                <a href="sobre.html"       class="tab-btn">📄 Descrição</a>
+                <a href="tecnologias.html" class="tab-btn active">⚙️ Tecnologias Utilizadas</a>
+                <a href="desenvolvedor.html" class="tab-btn">👨‍💻 O Desenvolvedor</a>
+            </div>
+
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px;">
+
+                <div class="tech-card">
+                    <img src="../Imagens/html_e_css.png" alt="HTML5 e CSS3" class="tech-icon">
+                    <h3 style="color:#e34f26; margin-bottom:10px;">HTML5 &amp; CSS3</h3>
+                    <p style="color:#aaa; line-height:1.5; text-align:left;">
+                        Estruturação semântica e estilização moderna com <span lang="en">Flexbox</span> e <span lang="en">CSS Grid</span> para total responsividade,
+                        utilizando paleta de cores escura inspirada na Batcaverna.
+                    </p>
+                </div>
+
+                <div class="tech-card">
+                    <img src="../Imagens/javascript.png" alt="JavaScript" class="tech-icon" lang="en">
+                    <h3 style="color:#f7df1e; margin-bottom:10px;" lang="en">JavaScript</h3>
+                    <p style="color:#aaa; line-height:1.5; text-align:left;">
+                        Lógica de programação pura, manipulação do <span lang="en">DOM</span> em tempo real, roteamento inteligente de
+                        páginas e algoritmos de filtro, pesquisa e ordenação (<span lang="en">Ranking</span>).
+                    </p>
+                </div>
+
+                <div class="tech-card">
+                    <img src="../Imagens/api.png" alt="Fetch API" class="tech-icon" lang="en">
+                    <h3 style="color:#22c55e; margin-bottom:10px;"><span lang="en">Fetch API &amp; Async/Await</span></h3>
+                    <p style="color:#aaa; line-height:1.5; text-align:left;">
+                        Consumo assíncrono da <em lang="en">SuperHero API (Akabab)</em> para buscar o <span lang="en">JSON</span> com os dados
+                        completos, imagens e atributos de combate dos personagens.
+                    </p>
+                </div>
+
+                <div class="tech-card">
+                    <img src="../Imagens/storage.png" alt="Local Storage" class="tech-icon" lang="en">
+                    <h3 style="color:#a855f7; margin-bottom:10px;" lang="en">Local Storage</h3>
+                    <p style="color:#aaa; line-height:1.5; text-align:left;">
+                        Uso do armazenamento do navegador para garantir que a sua lista de personagens Favoritos
+                        não desapareça mesmo que a página seja recarregada.
+                    </p>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="../Js/script.js"></script>
+</body>
+</html>

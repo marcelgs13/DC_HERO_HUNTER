@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Personagem - DC</title>
+    <link rel="stylesheet" href="../Estilo/style.css">
+    <link rel="shortcut icon" href="../Imagens/dc_logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-area">
+                <img src="../Imagens/dc_logo.png" alt="Logo DC Comics" class="site-logo" lang="en">
+                <h1 style="margin:0;" lang="en">DC HERO HUNTER</h1>
+            </div>
+            <nav style="margin-top:10px; display:flex; gap:15px;">
+                <a href="../index.html" style="color:white; text-decoration:none;">⬅ Voltar ao Início</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="loadingDetalhes" class="status-message">Buscando arquivos na Batcaverna...</div>
+
+    <main id="detalhesContent" class="detalhes-container hidden">
+        <div class="detalhes-header">
+            <img id="detImg" src="" alt="Imagem do Personagem">
+            <div style="flex:1;">
+                <h2 id="detName" style="font-size:2.5rem; margin-bottom:15px;"></h2>
+                <button id="btnFavDetalhes" class="fav-btn" style="margin-bottom:20px;">⭐ Adicionar aos Favoritos</button>
+
+                <div class="info-bloco">
+                    <h3>Identidade e Origem</h3>
+                    <p><strong>Nome Real:</strong> <span id="detFullName"></span></p>
+                    <p><strong>Local de Nascimento:</strong> <span id="detBirth"></span></p>
+                    <p><strong>Primeira Aparição:</strong> <span id="detFirstApp"></span></p>
+                    <p><strong>Alinhamento:</strong> <span id="detAlignment"></span></p>
+                </div>
+
+                <div class="info-bloco">
+                    <h3>Ficha Física</h3>
+                    <p><strong>Gênero:</strong> <span id="detGender"></span> | <strong>Raça:</strong> <span id="detRace"></span></p>
+                    <p><strong>Altura:</strong> <span id="detHeight"></span></p>
+                    <p><strong>Peso:</strong> <span id="detWeight"></span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="detalhes-infos-grid">
+            <div class="info-bloco">
+                <h3>Atuação e Conexões</h3>
+                <p><strong>Ocupação:</strong> <span id="detOccupation"></span></p>
+                <p><strong>Base de Operações:</strong> <span id="detBase"></span></p>
+                <p style="margin-top:10px;"><strong>Afiliações:</strong> <span id="detGroups"></span></p>
+            </div>
+
+            <div class="info-bloco">
+                <h3>Atributos de Combate</h3>
+                <div id="detStats" class="stats-container"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../Js/script.js"></script>
+</body>
+</html>
